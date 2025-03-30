@@ -1,0 +1,67 @@
+﻿
+@{
+    ViewBag.Title = "My_profile";
+    Layout = "~/Views/Shared/User_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+
+    <link rel="stylesheet" href="~/Content/Mine/CSS/User/MyProfile.css">
+</head>
+<body>
+
+    <div id="main">
+
+
+        <div id="prof">
+
+            <form method="post" enctype="multipart/form-data">
+
+              @foreach(var b in ViewBag.command.Rows)
+              {
+
+
+
+                <div id="profile_pic">
+
+                    <input type="image" name="Profile_pic" style="height: auto;" value="@b[0]" />
+
+                </div>
+
+
+                <div id="profile_details">
+
+                    <input type="text" style="width: 350px; height: 30px; margin-left: 5%; border: none; border-bottom: 3px solid beige; background: transparent; color: white;" placeholder="Username" name="username" value="@b[1]" readonly>
+
+                    <br /> <br>
+
+                    <input type="text" style="width: 350px; height: 30px; margin-left: 5%; border: none; border-bottom: 3px solid beige; background: transparent; color: white;" placeholder="Password" name="password" value="@b[2]" >
+
+                    <br><br />
+
+                    <input type="text" style="width: 350px; height: 30px; margin-left: 5%; border: none; border-bottom: 3px solid beige; background: transparent; color: white;" placeholder="Gender" name="gender" value="@b[3]" readonly >
+
+                    <br><br />
+
+                    <input type="email" style="width: 350px; height: 30px; margin-left: 6%; border: none; border-bottom: 3px solid beige; background: transparent; color: white;" placeholder="Email" name="email" value="@b[4]" >
+
+                    <br>
+
+                    <input type="submit" value="Save" style="width: 160px; height: 40px; margin-left: 26%; font-size: large; border-radius: 10px; margin-top: 7%; background-color: rgb(245, 169, 182); font-weight: bold;">
+                </div>
+
+              }
+             </div>
+              
+
+        </form>
+
+    </div>
+
+</body>
+</html>

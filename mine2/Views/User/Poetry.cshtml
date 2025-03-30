@@ -1,0 +1,107 @@
+﻿
+@{
+    ViewBag.Title = "Poetry";
+    Layout = "~/Views/Shared/Potery_layout.cshtml";
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poetry</title>
+
+    <link rel="stylesheet" href="~/Content/Mine/CSS/User/poem.css">
+</head>
+<body>
+
+
+    <!-- ---------------------------------------------Body--------------------------------------------- -->
+
+    <div id="body" style="height: auto;">
+     
+
+        <section id="sec1" style="height: fit-content;">
+
+            @foreach (var b in ViewBag.comm.Rows)
+            {
+
+                <h1 style="color: rgb(69, 68, 68); font-size: 30px;" id="@b[0]">@b[2]</h1>
+
+                <div id="poster1">
+                    <img src="~/Content/Blog_img/@b[4]" alt="" width="350px">
+                </div>
+
+                <p style="color: rgb(69, 68, 68); font-size: 18px; margin-left: -13%; margin-right: 10%;">@b[3]</p>
+
+            
+
+
+            <form method="post" style="margin-top: -3%;">
+
+
+                <input type="text" value="@Session["user"]" name="useres" style="visibility:hidden; width: 1px; " />
+
+
+                <input type="text" value="@b[0 ]" name="blog_id" style="visibility:hidden; width: 1px; " />
+
+                <input type="text" placeholder="Write your comment here......." style="width: 340px; padding-left:3%; height: 50px; margin-left: -18%; margin-top: 6%; margin-bottom: 7%; background: transparent;" name="comment" />
+
+                <input type="submit" value="Comment" style="color: rgb(49, 54, 62); font-size: 15px; border: none; height: 40px; width: 100px; background-color: rgb(188, 187, 187); border-radius: 20px; margin-left: 2%;" />
+
+
+                <div style="height: fit-content; width: 490px; margin-left: -13%; margin-top: -5%;">
+
+                    <p></p>
+
+                    <p style="border: 1px solid black; width: 400px; height: fit-content; ; padding-left: 5%; padding-top: 3%; padding-bottom: 3%; border-radius: 30px">
+                        @b[6]
+
+                        <br /><br />
+                        @b[7]
+                    </p>
+
+                </div>
+
+                }
+            </form>
+
+            }
+
+
+
+
+            @*<p style="color: rgb(69, 68, 68); font-size: 18px; margin-top: 2%;">Lorem, ipsum dolor sit amet consectetur <br> adipisicing elit Ullam ipsum sed cum  <br>provident consectetur ea debitis atque assu <br> menda commodi culpa  odit fuga repellat, <br>repellendus quasi   eaque exercitationem id hic esse!</p>*@
+
+        </section>
+
+        @*<section id="sec2">
+
+            <h1 style="color: rgb(69, 68, 68); font-size: 30px;">Dear Me.</h1>
+
+
+            <p style="color: rgb(69, 68, 68); font-size: 18px;">Lorem, ipsum dolor sit amet consectetur <br> adipisicing elit Ullam ipsum sed cum  <br>provident consectetur ea debitis atque assu <br> menda commodi culpa  odit fuga repellat, <br>repellendus quasi   eaque exercitationem id hic esse!</p>
+
+            <p style="color: rgb(69, 68, 68); font-size: 18px; margin-top: 2%;">Lorem, ipsum dolor sit amet consectetur <br> adipisicing elit Ullam ipsum sed cum  <br>provident consectetur ea debitis atque assu <br> menda commodi culpa  odit fuga repellat, <br>repellendus quasi   eaque exercitationem id hic esse!</p>
+
+        </section>
+
+
+        <section id="sec3">
+
+            <h1 style="color: rgb(69, 68, 68); font-size: 30px;">The ink Rain</h1>
+
+
+            <p style="color: rgb(69, 68, 68); font-size: 18px;">Lorem, ipsum dolor sit amet consectetur <br> adipisicing elit Ullam ipsum sed cum  <br>provident consectetur ea debitis atque assu <br> menda commodi culpa  odit fuga repellat, <br>repellendus quasi   eaque exercitationem id hic esse!</p>
+
+            <p style="color: rgb(69, 68, 68); font-size: 18px; margin-top: 2%;">Lorem, ipsum dolor sit amet consectetur <br> adipisicing elit Ullam ipsum sed cum  <br>provident consectetur ea debitis atque assu <br> menda commodi culpa  odit fuga repellat, <br>repellendus quasi   eaque exercitationem id hic esse!</p>
+
+        </section>*@
+    </div>
+
+    <!-- --------------------------------------------Body--------------------------------------------- -->
+
+
+</body>
+</html>

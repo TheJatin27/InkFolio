@@ -1,0 +1,47 @@
+body {
+    background-image: url(/Content/Mine/Images/reading.jpg);
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+}
+
+#profile_pic{
+    width: 190px;
+    height: 190px;
+    margin-left: 28%;
+    margin-top: 3%;
+    border: 1px solid black;
+    border-radius: 50%;
+    /*overflow: hidden;*/
+    background-color: black;
+    /*background-image: url();*/
+    /* padding-top: 5%; */
+}
+
+::placeholder{
+    font-size: large;
+    padding-left: 5%;
+    color: bisque;
+}
+
+#prof{
+    margin-left: 5%;
+    margin-top: 7%;
+    background-color: rgba(0, 0, 0, 0.811);
+    height: 550px;
+    padding-top: 1%;
+    padding-left: 3%;
+    width: 500px;
+    /* box-shadow: -5px -5px 10px 3px black, 5px 5px 10px 3px rgb(40, 39, 39);   */
+    border-radius: 10px;
+    /*margin-bottom: -10%;*/
+}
+
+#profile_details{
+    margin-top: 6%;
+    margin-left: 3%;
+}
+
+#main{
+    height: 800px;
+    
+}

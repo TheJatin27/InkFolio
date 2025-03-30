@@ -1,0 +1,44 @@
+﻿
+@{
+    ViewBag.Title = "Lifestyle";
+    Layout = "~/Views/Shared/Blog_layout.cshtml";
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="/Content/Mine/CSS/General/blog.css">
+
+</head>
+<body>
+
+    <section id="sec_1">
+
+        <h3 style="color: gray; font-family:'Times New Roman', Times, serif; font-weight: lighter; margin-top: 5%; margin-left: 27%;">-Lifestyle-</h3>
+
+        @foreach (var c in ViewBag.Lifestyle.Rows)
+        {
+
+
+            <h1 style="color: rgb(70, 70, 70); font-family:'Times New Roman', Times, serif; font-weight: lighter; margin-top: 2%; margin-left: 20%; font-size: 40px; letter-spacing: 1px;">@c[2]</h1>
+
+            <div id="side1">
+
+                <div id="poster1">
+                    <img src="~/Content/Blog_img/@c[4]" alt="" width="650px" id="ends_with_us">
+                </div>
+
+                <p id="review1">
+                    @c[3]
+                </p>
+
+                <button class="read_more"><a href="#" style="color: rgb(49, 54, 62); font-size: 15px;">Read More</a></button>
+            </div>
+
+
+        }
+

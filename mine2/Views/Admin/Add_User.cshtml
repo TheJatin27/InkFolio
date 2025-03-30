@@ -1,0 +1,139 @@
+﻿
+@{
+    ViewBag.Title = "Add_User";
+    Layout = "~/Views/Shared/Admin_layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="~/Content/Mine/CSS/Admin/AddUser.css">
+</head>
+<body>
+
+    <div id="form">
+
+        <form method="post" enctype="multipart/form-data">
+
+
+            <div id="heading">
+                <h1 style="color: white; font-family: sans-serif; font-size: xxx-large; font-weight: lighter; margin-left: 21%; margin-top: 5%;">Add User</h1>
+            </div>
+
+            <input type="text" placeholder="Username" style="width: 300px; height: 30px; font-size: 17px; letter-spacing: 1px; padding-left: 3%; background: transparent; border: none; border-bottom: 3px solid purple;" name="Username">
+
+            <br><br>
+
+            <input type="password" placeholder="Password" style="width: 300px; height: 30px; font-size: 17px; letter-spacing: 1px; padding-left: 3%; background: transparent; border: none; border-bottom: 3px solid purple; margin-top: 1%;" name="Password">
+
+            <br><br>
+
+            <input type="email" placeholder="Email" style="width: 300px; height: 30px; font-size: 17px; letter-spacing: 1px; padding-left: 3%; background: transparent; border: none; border-bottom: 3px solid purple; margin-top: 1%;" name="Email">
+
+            <br><br>
+
+            <label for="Female" style="  font-size: 17px; font-weight: bold; letter-spacing: 1px; padding-left: 3%; background: transparent;">Female</label>
+
+            <input type="radio" style="  font-size: 17px; letter-spacing: 1px; background: transparent;" value="Female" name="gender">
+
+
+
+            <label for="Female" style=" font-size: 17px; font-weight: bold; letter-spacing: 1px; padding-left: 3%; background: transparent;" >Male</label>
+
+            <input type="radio"  style="  font-size: 17px; letter-spacing: 1px;  background: transparent;" name="gender" value="Female">
+
+
+            <label for="Female" style=" font-size: 17px; font-weight: bold; letter-spacing: 1px; padding-left: 3%; background: transparent;">Other</label>
+
+            <input type="radio"  style="; background: transparent;" name="gender" value="Female">
+
+
+            <br><br>
+
+
+            <input type="file" style="width: 300px; height: 30px; font-size: 17px; letter-spacing: 1px; padding-left: 3%; background: transparent; border: none; border-bottom: 3px solid purple; margin-top: 3%;" name="Photo">
+
+            <br><br>
+
+            <input type="submit" value="Add" style="height: 40px; width: 150px; background-color: rgb(154, 6, 154); color: white; border: none; box-shadow: 5px 5px 8px 1px rgb(10, 10, 10); margin-top: 6%; font-size: 19px; border-radius: 8px; margin-left: 21%;">
+
+
+        </form>
+
+    </div>
+
+    <div id="table">
+
+        <table style="border: 1px solid white; margin: auto; padding: 2px;">
+
+            <thead>
+            <th style="border: 1px solid white; padding: 25px; color: white;">
+                Profile_pic
+            </th>
+
+            <th style="border: 1px solid white; padding: 20px; color: white;">
+                Username
+            </th>
+
+
+
+            <th style="border: 1px solid white; padding: 20px; color: white;">
+                Password
+            </th>
+
+
+            <th style="border: 1px solid white; padding: 20px; color: white;">
+                Gender
+            </th>
+
+
+            <th style="border: 1px solid white; padding: 20px; color: white;">
+                Email
+            </th>
+
+            </thead>
+
+            @{ 
+                if(ViewBag.data != null)
+            {
+                foreach(var r in ViewBag.data.Rows)
+                {
+                        <tr>
+                            <td style="border: 1px solid white; padding: 20px; color: white;">
+                            @r[0]
+                            </td>
+
+
+                            <td style="border: 1px solid white; padding: 20px; color: white;">
+                             @r[1]
+                            </td>
+
+
+                            <td style="border: 1px solid white; padding: 20px; color: white;">
+                            @r[2]
+                            </td>
+
+
+                            <td style="border: 1px solid white; padding: 20px; color: white;">
+                            @r[3]
+                            </td>
+
+
+                            <td style="border: 1px solid white; padding: 20px; color: white;">
+                             @r[4]
+                            </td>
+                        </tr>
+                }
+            }
+            }
+
+        </table>
+    </div>
+
+</body>
+</html>
+

@@ -1,0 +1,70 @@
+﻿
+@{
+    ViewBag.Title = "Poetry";
+    Layout = "~/Views/Shared/Potery_layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poetry</title>
+
+    <link rel="stylesheet" href="~/Content/Mine/CSS/User/poem.css">
+</head>
+<body>
+
+
+    <!-- ---------------------------------------------Body--------------------------------------------- -->
+
+    <div id="body">
+
+        <section id="sec1">
+
+            @foreach (var b in ViewBag.poetry.Rows)
+            {
+                <h1 style="color: rgb(69, 68, 68); font-size: 30px;">@b[2]</h1>
+
+
+                <div id="poster1">
+                    <img src="~/Content/Blog_img/@b[4]" alt="" width="350px">
+                </div>
+
+                <p style="color: rgb(69, 68, 68); font-size: 18px; margin-left: -13%; margin-right: 10%;">@b[3]</p>
+
+
+            }
+
+
+        </section>
+
+        @*<section id="sec2">
+
+                <h1 style="color: rgb(69, 68, 68); font-size: 30px;">Dear Me.</h1>
+
+
+                <p style="color: rgb(69, 68, 68); font-size: 18px;">Lorem, ipsum dolor sit amet consectetur <br> adipisicing elit Ullam ipsum sed cum  <br>provident consectetur ea debitis atque assu <br> menda commodi culpa  odit fuga repellat, <br>repellendus quasi   eaque exercitationem id hic esse!</p>
+
+                <p style="color: rgb(69, 68, 68); font-size: 18px; margin-top: 2%;">Lorem, ipsum dolor sit amet consectetur <br> adipisicing elit Ullam ipsum sed cum  <br>provident consectetur ea debitis atque assu <br> menda commodi culpa  odit fuga repellat, <br>repellendus quasi   eaque exercitationem id hic esse!</p>
+
+            </section>
+
+
+            <section id="sec3">
+
+                <h1 style="color: rgb(69, 68, 68); font-size: 30px;">The ink Rain</h1>
+
+
+                <p style="color: rgb(69, 68, 68); font-size: 18px;">Lorem, ipsum dolor sit amet consectetur <br> adipisicing elit Ullam ipsum sed cum  <br>provident consectetur ea debitis atque assu <br> menda commodi culpa  odit fuga repellat, <br>repellendus quasi   eaque exercitationem id hic esse!</p>
+
+                <p style="color: rgb(69, 68, 68); font-size: 18px; margin-top: 2%;">Lorem, ipsum dolor sit amet consectetur <br> adipisicing elit Ullam ipsum sed cum  <br>provident consectetur ea debitis atque assu <br> menda commodi culpa  odit fuga repellat, <br>repellendus quasi   eaque exercitationem id hic esse!</p>
+
+            </section>*@
+    </div>
+
+    <!-- --------------------------------------------Body--------------------------------------------- -->
+
+
+</body>
+</html>

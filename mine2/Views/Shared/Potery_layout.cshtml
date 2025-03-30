@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/Content/Mine/CSS/General/poem.css">
+
+</head>
+<body>
+
+<!-- --------------------------------------------Header--------------------------------------------- -->
+
+    <div id="header">
+
+        <div id="navigation">
+
+            <nav id="navbar">
+
+                <ul>
+                    <li><a href="/User/Index" id="home">HOME</a></li>
+                    <li><a href="/User/BookReviews" id="book">BLOGS</a></li>
+                    <li><a href="/User/Poetry" id="home">POETRY</a></li>
+                    <li><a href="/User/BookReviews" id="book">BOOK &nbsp;REVIEWS</a></li>
+                    <li><a href="/User/Fashion" id="fashion">FASHION</a></li>
+                    <li><a href="/User/Lifestyle" id="lifestyle">LIFESTYLE</a></li>
+                    <li><a href="/User/Health" id="health">HEALTH</a></li>
+                </ul>
+
+            </nav>
+        </div>
+
+        <h1 id="heading_main">InkFolio</h1>
+
+        <h2 id="tag_line">My Work, My Words</h2>
+
+        <img src="~/Content/Mine/Images/header-new5.png" alt="" width="1260px" style="margin-left: 15%; margin-top: -12%">
+    </div>
+
+<!-- --------------------------------------------Header--------------------------------------------- -->
+
+
+    @RenderBody()
+
+
+
+<!-- --------------------------------------------Footer--------------------------------------------- -->
+
+
+    <footer>
+
+        <img src="~/Content/Mine/Images/bottom_new3.png" alt="" width="100%">
+
+    </footer>
+</body>
+</html>

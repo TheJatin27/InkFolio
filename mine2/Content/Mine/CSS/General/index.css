@@ -1,0 +1,945 @@
+html{
+    scroll-behavior: smooth;
+}
+
+#main{
+    width: 100%;
+}
+
+#body_slider{
+    height: 740px;
+    width: 100%;
+    background-image: url(../../Images/BG2.jpg);
+    background-size: 100%;    
+    animation-name: zoom;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    background-color:  rgba(30, 33, 35, 0.466);
+    /* margin-top: -15%; */
+}
+
+@keyframes zoom{
+    0%{
+        background-size: 20%;
+        transition: 2s;
+    } 
+
+    100%{
+        background-size: 50%;
+        transition: 2s;
+    }
+}
+
+ #navigation{             /* naviagtion is the div in which nav bar is made. */
+    height: 80px;
+    width: 100%;
+    margin-top: -1%;
+}
+
+#navbar{                /* navbar is the ID of <nav> tag. */
+    background-color:  rgba(10, 10, 10, 0.947);
+    background-size: 120%;
+    position: fixed;
+    width: 100%;
+    /* margin-top: -5%; */
+    height: 130px;
+}
+
+#background{
+    /* background-color: rgba(30, 33, 35, 0.6) ;*/
+    background-color:  rgba(10, 10, 10, 0.354);
+    width: 100%;
+    height: 700px;
+    margin-top: -15%;
+}
+
+#text{
+    margin-top: 16.4%;
+    height: 230px;
+    width: 500px;
+    margin-left: 32%;
+    padding-top: 10%;
+}
+
+.nav_link{                         /* .nav_link is the class i.e. used in the anchor tag of nav bar. */
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    margin-top: -4.5%;
+    margin-left: 35%;
+    font-size: larger;
+}
+
+#name{
+    display: flex;
+}
+
+#fname{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: xxx-large;
+    margin-left: 3%;
+    animation-name: abc;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    margin-top: 2.1%;
+}
+
+#lname{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: xxx-large;
+    color: white;
+    margin-left: 1%;
+    animation-name: def;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    margin-top: 2.1%;
+}
+
+
+@keyframes border1 {
+    0% {
+        width: 1px;
+        border-bottom: 3px solid rgb(198, 42, 249);
+    }
+
+    100% {
+        width: 100px;
+        border-bottom: 3px solid rgb(198, 42, 249);
+    }
+}
+
+#home {
+    margin-left: -105%;
+    height: 70px;
+    width: 100px;
+}
+
+#home:hover {
+     /*color: rgb(198, 42, 249);*/
+     cursor: pointer;
+     animation-name: border1;
+     animation-duration: 3s;
+}
+
+#about {
+    margin-left: -40%;
+    height: 70px;
+    width: 100px;
+}
+
+#about :hover{
+    cursor: pointer;
+    animation-name: border1;
+    animation-duration: 3s;
+}
+
+#portfolio {
+    margin-left: 10%;
+    height: 70px;
+    width: 100px;
+}
+
+ #portfolio:hover {
+        /*color: rgb(198, 42, 249);*/
+        cursor: pointer;
+        animation-name: border;
+        border-bottom: 3px solid rgb(198, 42, 249);
+        animation-duration: 3s;
+ }
+
+#blogs {
+    margin-left: 50%;
+    letter-spacing: 1.5px;
+    height: 70px;
+    width: 100px;
+}
+
+#blog:hover {
+    /*color: rgb(198, 42, 249);*/
+    cursor: pointer;
+    animation-name: border;
+    animation-duration: 3s;
+    border-block-start: 5cm;
+}
+
+#poem:hover {
+    /*color: rgb(198, 42, 249);*/
+    cursor: pointer;
+    height: 70px;
+    width: 100px;
+}
+
+#contact{
+    height: 30.9px;
+    width: 115px;
+    padding-top: 0.3%;
+    padding-left: 2%;
+    margin-top: -3.5%;
+    margin-left: 70%;
+    border: 5px solid whitesmoke;
+    border-radius: 5px;
+}
+
+#contact:hover{
+    background-color: rgba(255, 255, 255, 0.742);
+}
+
+.link:hover{
+    color: rgb(1, 1, 74);
+    font-weight: bold;
+}
+
+.link{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    letter-spacing: 1px;
+    font-size: large;
+}
+
+
+#hire{
+    height: 30.1px;
+    width: 120px;
+    padding-top: 0.4%;
+    padding-left: 2.6%;
+    margin-top: -3.2%;
+    margin-left: 83%;
+    border: 5px solid whitesmoke;
+    border-radius: 5px;
+}
+
+#hire:hover{
+    background-color: rgba(255, 255, 255, 0.808);
+}
+
+@keyframes abc {                     /* Animation of first name. */
+
+    0%{
+        color:  white;
+        transition: 20s;
+    }
+
+    25%{
+        color:  rgb(198, 42, 249);
+        transition: 10s;
+    }
+
+    50%{
+        color: white;
+        transition: 10s;
+    }
+
+    75%{
+        color:  rgb(198, 42, 249);
+        transition: 10s;
+    }
+
+    100%{
+        color: white;
+        transition: 10s;
+    }
+}
+
+
+@keyframes def {                 /* Animation of last name. */
+
+    0%{
+        color:  rgb(198, 42, 249);
+        transition: 20s;
+    }
+
+    25%{
+        color:  white;
+        transition: 10s;
+    }
+
+    50%{
+        color:  rgb(198, 42, 249);
+        transition: 10s;
+    }
+
+    75%{
+        color:  white;
+        transition: 10s;
+    }
+
+    100%{
+        color:  rgb(198, 42, 249);
+        transition: 10s;
+    }
+
+}
+
+#first_line{
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;  
+      font-size: xxx-large;
+      font-weight: lighter;
+      letter-spacing: 2px;
+}
+
+#second_line::before{
+    content: "A writer";
+    font-size: 75px;
+    color: white;
+    animation-name: II_line;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    font-family: sans-serif;
+}
+
+#d1{                    /* d1 is div of the second line */
+    height: 100px;
+    width: 800px;
+    margin-top: 5%;
+    display: flex;
+    margin-left: -20%;
+}
+
+
+@keyframes II_line {
+    
+    0%{
+        content: "A Writer"; 
+        width: auto;
+        border-right: 2px solid white;
+        transition: 10s;
+        scroll-timeline: smooth;
+    }
+
+    5%{
+        content: "A Writ"; 
+        width: auto;
+        border-right: 2px solid white;
+        transition: 3s;
+}
+
+    10%{
+            content: "A Wr"; 
+            width: auto;
+            border-right: 2px solid white;
+            transition: 3s;
+    }
+
+    20%{
+        content: "A"; 
+        width: auto;
+        border-right: 2px solid white;
+        transition: 20s;
+    }
+
+    25%{
+        content: "A Frontend Developer"; 
+        width: auto;
+        border-right: 2px solid white;
+        transition: 120s;
+        display: flex;
+    }
+
+    35%{
+        content: "A Frontend Develo"; 
+        width: auto;
+        border-right: 2px solid white;
+        transition: 50s;
+        display: flex;
+    }
+
+    45%{
+        content: "A Frontend Deve"; 
+        width: auto;
+        border-right: 2px solid white;
+        transition: 60s;
+        display: flex;
+    }
+
+    50%{
+        content: "A Frontend "; 
+        width: auto;
+        border-right: 2px solid white;
+        transition: 50s;
+        display: flex;
+    }
+
+    55%{
+        content: "A Front"; 
+        width: auto;
+        border-right: 2px solid white;
+        transition: 50s;
+    }
+
+    60%{
+        content: "A Fro"; 
+        width: auto;
+        border-right: 2px solid white;
+        transition: 50s;
+    }
+
+    65%{
+        content: "A "; 
+        width: auto;
+        border-right: 2px solid white;
+        transition: 70s;
+    }
+
+    75%{
+        content: "A Blogger"; 
+        width: auto;
+        border-right: 2px solid white;
+        transition: 200s;
+    }
+
+    85%{
+        content: "A Blogg"; 
+        width: auto;
+        border-right: 2px solid white;
+        transition: 60s;
+    }
+
+    90%{
+        content: "A Blo"; 
+        width: auto;
+        border-right: 2px solid white;
+        transition: 60s;
+    }
+
+    95%{
+            content: "A "; 
+            width: auto;
+            border-right: 2px solid white;
+            transition: 60s;
+    }
+
+    100%{
+        content: "A Writer"; 
+        width: auto;
+        border-right: 2px solid white;
+        transition: 3s;
+    }
+
+} 
+
+#git{
+    background-color: rgb(24, 24, 24);
+    height: 38px;
+    width: 38px;
+    border-radius: 30px;
+    padding-left: 1%;
+    padding-top: 1%;
+    margin-top: 10%;
+    margin-left: 36%;
+    box-shadow: -2px -2px 5px rgb(83, 83, 78);
+}
+
+#insta{
+    background-color: rgb(24, 24, 24);
+    height: 35px;
+    width: 35px;
+    border-radius: 30px;
+    padding-left: 1.4%;
+    padding-top: 1.4%;
+    margin-top: -8.5%;
+    margin-left: 48%;
+    box-shadow: -2px -2px 5px rgb(83, 83, 78);
+}
+
+#linkedin{
+    background-color: rgb(24, 24, 24);
+    height: 33px;
+    width: 33px;
+    border-radius: 30px;
+    padding-left: 1.4%;
+    padding-top: 1.4%;
+    margin-top: -7.9%;
+    margin-left: 60%;
+    box-shadow: -2px -2px 5px rgb(83, 83, 78);
+}
+
+#section1{
+    height: 600px;
+    width: 100%;
+    background-color: #212529;
+    margin-top: -2%;
+}
+
+#sub1{
+    height: 600px;
+    width: 700px;
+    padding-top: 3%;
+    margin-left: -5%;
+}
+
+#heading1{
+   height: 70px;
+   width: 100px;
+   color: white;
+   margin-left: 28%;
+   border-bottom: 3px solid   rgb(198, 42, 249);
+   border-block-start: 5cm;
+   font-family: Arial, Helvetica, sans-serif;
+   animation-name: border;
+    animation-duration: 3s;
+}
+
+@keyframes border {
+     0%{
+        width: 1px;
+     }
+
+     100%{
+        width: 100px;
+     }
+}
+
+#heading2{
+    height: 70px;
+    width: 60px;
+    margin-top: -15.8%;
+    color: rgb(229, 227, 227);
+    margin-left: 51%;
+    border-block-start: 5cm;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+
+#about1{
+    font-size: xxx-large;
+    margin-left: 5%;
+}
+
+#me{
+    font-size: xxx-large;
+    margin-left: 5%;
+
+}
+
+#about_me{
+    height: 250px;
+    width: 398px;
+    margin-top: -34%;
+    padding-top: 0.5%;
+    margin-left: 1%;
+    padding-left: 3%;
+    padding-right: 1%;
+}
+
+#para1{
+    color: rgb(212, 208, 208);
+    font-size: large;
+    font-family:  Helvetica, sans-serif;
+    letter-spacing: 1.4px;
+}
+
+#button{
+    height: 35px;
+    width: 150px;
+    color: white;
+    margin-left: 5%;
+    margin-top: 2%;
+    padding-top: 0.9%;
+    border-radius: 8px;
+    box-shadow: -4px -4px 10px 1px rgb(83, 83, 78), 2px 2px 8px 2px black; 
+    background-color: rgb(44, 51, 57);   
+}
+
+#button:hover{
+    background-color: rgb(48, 48, 42);
+    box-shadow: 5px 5px 8px 2px black;
+    transform: scale(1);
+}
+
+#CV{
+    margin-left: 12%;
+    font-family:  Helvetica, sans-serif;
+}
+
+#sub3{
+    height: 600px;
+    width: 730px;
+    padding-top: 5%;
+    float: right;
+    margin-top: -43.5%;
+    margin-left: 12%;
+}
+
+#skills li{
+    list-style: none;
+    padding: 0;
+    font-family: sans-serif;
+    margin: 20px 0;
+}
+
+#skills{
+    width: 500px;
+    margin: 60px auto;
+    color: white;
+    margin-top: -0.5%;
+    margin-left: 30%;
+}
+
+.bar{
+    background: #353b48;
+    display: block;
+    height: 4px;
+    border: 5px solid rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: -2px -2px 8px rgb(76, 90, 103), 1px 1px 2px black;
+    width: 430px;
+}
+
+.bar span{
+    height: 10px;
+    float: left;
+    /* background: rgb(198, 42, 249); */
+    background: linear-gradient( 90deg ,rgb(38, 2, 50), rgb(72, 20, 89),  rgb(112, 4, 148), rgb(208, 77, 251));
+}
+
+#html{
+    width: 90%;
+    animation: html 2s;
+}
+
+@keyframes html {
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 90%;
+    }
+}
+
+#css{
+    width: 80%;
+    animation: css 2s;
+    padding-left: -5%;
+}
+
+@keyframes css {
+    0%{
+        width: 0%;
+        
+    }
+
+    100%{
+        width: 80%;
+    }
+}
+
+#dotnet{
+    width: 70%;
+    animation: net 2s;
+}
+
+@keyframes net {
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 70%;
+    }
+}
+
+#js{
+    width: 50%;
+    animation: js 2s;
+}
+
+@keyframes js {
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 50%;
+    }
+}
+
+.percent{
+    margin-top: -2%;
+    float: right;
+    margin-right: 15%;
+    color: #a3a4a5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#section2{
+    height: 1500px;
+    width: 100%;
+    background-color:  #212529;
+    /* margin-left:%; */
+    margin-top: 1%;
+}
+
+#sub4{
+    margin-top: -3.5%;
+    height: 1500px;
+    margin-left: 1%;
+}
+
+#HTML{
+    background-color:  #212529;
+    height: 260px;
+    width: 600px;
+    /* background-color: powderblue; */
+    margin-top: 5%;
+    margin-left: 5%;
+    border-radius: 20px;
+    box-shadow: -2px -2px 5px 1px rgb(83, 83, 78), 2px 2px 8px 2px black; 
+}
+
+#CSS{
+    background-color:  #212529;
+    height: 260px;
+    width: 600px;
+    /* background-color: powderblue; */
+    margin-top: -19.8%;
+    margin-left: 50.5%;
+    border-radius: 20px;
+    box-shadow: -2px -2px 5px 1px rgb(83, 83, 78), 2px 2px 8px 2px black; 
+}
+
+#JS{
+    background-color:  #212529;
+    height: 260px;
+    width: 600px;
+    /* background-color: powderblue; */
+    margin-top: 3%;
+    margin-left: 4.5%;
+    border-radius: 20px;
+    box-shadow: -2px -2px 5px 1px rgb(83, 83, 78), 2px 2px 8px 2px black; 
+}
+
+
+#java{
+    background-color:  #212529;
+    height: 260px;
+    width: 600px;
+    /* background-color: powderblue; */
+    margin-top: -19.7%;
+    margin-left: 50.3%;
+    border-radius: 20px;
+    box-shadow: -2px -2px 5px 1px rgb(83, 83, 78), 2px 2px 8px 2px black; 
+}
+
+#C{
+    background-color:  #212529;
+    height: 260px;
+    width: 600px;
+    /* background-color: powderblue; */
+    margin-top: 3%;
+    margin-left: 4.5%;
+    border-radius: 20px;
+    box-shadow: -2px -2px 5px 1px rgb(83, 83, 78), 2px 2px 8px 2px black; 
+}
+
+#DBMS{
+    background-color:  #212529;
+    height: 260px;
+    width: 600px;
+    /* background-color: powderblue; */
+    margin-top: -19.7%;
+    margin-left: 50.3%;
+    border-radius: 20px;
+    box-shadow: -2px -2px 5px 1px rgb(83, 83, 78), 2px 2px 8px 2px black; 
+}
+
+#CSharp{
+    background-color:  #212529;
+    height: 260px;
+    width: 600px;
+    /* background-color: powderblue; */
+    margin-top: 3%;
+    margin-left: 4.5%;
+    border-radius: 20px;
+    box-shadow: -2px -2px 5px 1px rgb(83, 83, 78), 2px 2px 8px 2px black; 
+}
+
+#net{
+    background-color:  #212529;
+    height: 260px;
+    width: 600px;
+    /* background-color: powderblue; */
+    margin-top: -19.7%;
+    margin-left: 50.3%;
+    border-radius: 20px;
+    box-shadow: -2px -2px 5px 1px rgb(83, 83, 78), 2px 2px 8px 2px black; 
+}
+
+
+#my_services{
+    height: 700px;
+    background-color: rgb(20, 20, 26);
+    padding-top: 5%;
+    width: 100%;
+    margin-top: -1.3%;
+}
+
+#service_heading{
+    color: whitesmoke;
+    font-size: 47px;
+    font-family: sans-serif;
+    margin-left: 41%;
+    letter-spacing: 1px;
+    font-weight: lighter;
+}
+
+#service_description{
+    color: rgb(202, 200, 200);
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    margin-left: 4%;
+    margin-right: -8%;
+}
+
+#description_div{
+    width: 700px;
+    padding-left: 330px;
+    height: 100px;
+}
+
+#poetry{
+    width: 400px;
+    height: 380px;
+    margin-left: 3%;
+    margin-top: 3%;
+    border-radius: 30px;
+    box-shadow: 1px 1px 5px rgb(76, 90, 103), -5px -5px 10px black;
+}
+
+#poem_heading{
+    margin-left: 35%;
+    font-family: sans-serif;
+    font-size: xx-large;
+    letter-spacing: 1px;
+    color: whitesmoke;
+    font-weight: lighter;
+}
+
+#poem_description{
+    margin-left: 14%;
+    margin-right: 9%;
+    font-size: large;
+    margin-top: -2%;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    color:  rgb(202, 200, 200);
+}
+
+#web{
+    width: 400px;
+    height: 380px;
+    margin-left: 36%;
+    margin-top: -26.5%;
+    border-radius: 30px;
+    box-shadow: 1px 1px 5px rgb(76, 90, 103), -5px -5px 10px black;
+}
+
+#web_heading{
+    margin-left: 13%;
+    font-family: sans-serif;
+    font-size: xx-large;
+    letter-spacing: 1px;
+    color: whitesmoke;
+    font-weight: lighter;
+}
+
+#web_description{
+    margin-left: 14%;
+    margin-right: 9%;
+    font-size: large;
+    margin-top: -1%;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    color:  rgb(202, 200, 200);
+}
+
+
+#blog{
+    width: 400px;
+    height: 380px;
+    margin-left: 68%;
+    margin-top: -26.6%;
+    border-radius: 30px;
+    box-shadow: 1px 1px 5px rgb(76, 90, 103), -5px -5px 10px black;
+}
+
+#blog_heading{
+    color: whitesmoke;
+    margin-left: 40%;
+    font-family: sans-serif;
+    font-size: xx-large;
+    letter-spacing: 1px;
+    font-weight: lighter;
+}
+
+#blog_description{
+    margin-left: 14%;
+    margin-right: 9%;
+    font-size: large;
+    margin-top: -2%;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    color:  rgb(202, 200, 200);
+}
+
+#my_work{
+    width: 100%;
+    height: 1000px;
+    background-color:  #212529;
+    margin-top: -2.8%;
+}
+
+#subscribe{
+    /* background-color:  #212529; */
+    /* background-color: rgb(20, 20, 26); */
+    background-color:  #212529;
+    height: 420px;
+    width: 100%;
+    /* margin-top: 2%; */
+    /* color: black; */
+}
+
+#input{
+    height: 60px;
+    width: 555px;
+    margin-left: 30%;
+    margin-top: 2%;
+    border-radius: 70px;
+    background-color: whitesmoke;
+}
+
+#contact_me{
+    background-color: rgb(20, 20, 26);
+    width: 100%;
+    height: 800px;
+    font-weight: lighter;
+    margin-top: -2.9%;
+}
+
+#form_div{
+    margin-top: 5%;
+    margin-left: 15%;
+}
+
+#footer_bottom{
+    background-color: rgb(20, 20, 26);
+    width: 100%;
+    height: 200px;
+    margin-top: 6%;
+}
+
+#footer_img{
+    padding-top: 6%;
+    margin-left: 37%;
+}

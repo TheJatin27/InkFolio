@@ -1,0 +1,104 @@
+#heading{
+    margin-top: 6%;
+    margin-left: 38.5%;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    font-size: 55px;
+    font-weight: bold;
+}
+
+#card_sec1{
+    display: flex;
+    /* margin-top: 3%; */
+}
+
+#Card1{
+    width: 400px;
+    height: 380px;
+    margin-left: 3%;
+    margin-top: 3%;
+    border-radius: 25px;
+    box-shadow: -1px -1px 10px powderblue, 5px 5px 10px black;
+}
+
+#card1_heading{
+    margin-top: 42%;
+    margin-left: 28%;
+}
+
+#Card2{
+    width: 400px;
+    height: 380px;
+    margin-left: 5%;
+    margin-top: 3%;
+    border-radius: 25px;
+    box-shadow: -1px -1px 10px powderblue, 5px 5px 10px black;
+}
+
+#card2_heading{
+    margin-top: 42%;
+    margin-left: 26%;
+}
+
+#Card3{
+    width: 420px;
+    height: 390px;
+    margin-left: 5%;
+    margin-top: 3%;
+    border-radius: 25px;
+    box-shadow: -1px -1px 10px powderblue, 5px 5px 10px black;
+}
+
+#card3_heading{
+    margin-top: 42%;
+    margin-left: 24%;
+}
+
+#card_sec2{
+    display: flex;
+    margin-top: 2%;
+}
+   
+#Card4{
+    width: 400px;
+    height: 380px;
+    margin-left: 3%;
+    margin-top: 3%;
+    border-radius: 25px;
+    box-shadow: -1px -1px 10px powderblue, 5px 5px 10px black;
+}
+
+#card4_heading{
+    margin-top: 42%;
+    margin-left: 20%;
+}
+
+#Card5{
+    width: 400px;
+    height: 380px;
+    margin-left: 5%;
+    margin-top: 3%;
+    border-radius: 25px;
+    box-shadow: -1px -1px 10px powderblue, 5px 5px 10px black;
+}
+
+#card5_heading {
+    margin-top: 42%;
+    margin-left: 20%;
+}
+
+#Card6{
+    width: 420px;
+    height: 390px;
+    margin-left: 5%;
+    margin-top: 3%;
+    border-radius: 25px;
+    box-shadow: -1px -1px 10px powderblue, 5px 5px 10px black;
+}
+
+
+
+    
+
+    
+    

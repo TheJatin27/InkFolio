@@ -1,0 +1,105 @@
+﻿
+@{
+    ViewBag.Title = "Category";
+    Layout = "~/Views/Shared/Admin_layout.cshtml";
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="~/Content/Mine/CSS/Admin/AddCategory.css">
+</head>
+<body>
+
+    <div id="form">
+
+        <form action="" method="post" enctype="multipart/form-data">
+
+
+            <div id="heading">
+                <h1 style="color: white; font-family: sans-serif; font-size: xxx-large; font-weight: lighter; margin-left: 25%; margin-top: 5%;">Category</h1>
+            </div>
+
+            <!--<div id="dropdown">-->
+            @*<select name="Category_name" id="Category_name">
+            <option id="Cat">Category</option>
+            <option value="">Book Reviews</option>
+            <option value="">Health</option>
+            <option value="">Poetry</option>
+            <option value="">Fashion</option>
+            <option value="">Lifestyle</option>
+        </select>*@
+            <!--</div>-->
+
+
+            <input type="text" placeholder="Category Name" style="width: 300px; height: 30px; font-size: 17px; letter-spacing: 1px; padding-left: 3%; background: transparent; border: none; border-bottom: 3px solid purple; margin-top: 3%;" name="category_name">
+
+            <br><br>
+
+            <input type="file" style="width: 300px; height: 30px; font-size: 17px; letter-spacing: 1px; padding-left: 3%; background: transparent; border: none; border-bottom: 3px solid purple; margin-top: 3%;" name="category_icon">
+
+            <br><br>
+
+            <input type="submit" value="Add" style="height: 40px; width: 150px; background-color: rgb(154, 6, 154); color: white; border: none; box-shadow: 5px 5px 8px 1px rgb(10, 10, 10); margin-top: 3%; font-size: 19px; border-radius: 8px; margin-left: 21%;">
+
+
+        </form>
+
+    </div>
+
+    <div id="table">
+
+       <table style="border: 1px solid white; margin: auto; padding: 2px;">
+
+         <thead>
+            <th style="border: 1px solid white; padding: 25px; color: white;">
+                SR
+            </th>
+
+            <th style="border: 1px solid white; padding: 20px; color: white;">
+                Category Name
+            </th>
+
+
+            <th style="border: 1px solid white; padding: 20px; color: white;">
+                Category Icon
+            </th>
+
+         </thead>
+
+
+            @{
+                if (ViewBag.category != null)
+                {
+                    foreach (var r in ViewBag.category.Rows)
+                    {
+                        <tr>
+                            <td style="border: 1px solid white; padding: 20px; color: white;">
+                                @r[0]
+                            </td>
+
+
+                            <td style="border: 1px solid white; padding: 20px; color: white;">
+                                @r[1]
+                            </td>
+
+
+                            <td style="border: 1px solid white; padding: 20px; color: white;">
+                                @r[2]
+                            </td>
+                        </tr>
+                    }
+                }
+            }
+
+        </table>
+    </div>
+
+</body>
+</html>
+

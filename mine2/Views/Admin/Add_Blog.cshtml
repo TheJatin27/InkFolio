@@ -1,0 +1,137 @@
+﻿
+@{
+    ViewBag.Title = "Add_Blog";
+    Layout = "~/Views/Shared/Admin_layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="~/Content/Mine/CSS/Admin/AddBlog.css">
+</head>
+<body>
+
+    <div id="form">
+
+        <form method="post" enctype="multipart/form-data">
+
+
+            <div id="heading">
+                <h1 style="color: white; font-family: sans-serif; font-size: xxx-large; font-weight: lighter; margin-left: 18%; margin-top: 5%;">Add Blog</h1>
+            </div>
+
+            <div id="dropdown">
+
+                <select name="Category" id="Category_name">
+
+                    <option id="Cat" value="0">Category</option>
+
+
+                    @foreach (var a in ViewBag.cat.Rows)
+                    {
+                        <option value="@a[0]">@a[1]</option>
+                    }
+
+
+                </select>
+            </div>
+
+
+            <input type="text" placeholder="Blog Name" style="width: 300px; height: 30px; font-size: 17px; letter-spacing: 1px; padding-left: 3%; background: transparent; border: none; border-bottom: 3px solid purple; margin-top: 7%;" name="heading">
+
+            @*<textarea name="heading" id="blog_content" cols="33" rows="2" placeholder="Enter Blog Content" style=" font-size: 17px; letter-spacing: 1px; padding-left: 3%; padding-top: 4%; background: transparent; border: none; border-bottom: 3px solid purple; margin-top: 1%; border-left: 3px solid purple; "></textarea>*@
+            <br /> <br />
+
+            <textarea name="blog_content" id="blog_content" cols="33" rows="2" placeholder="Enter Blog Content" style=" font-size: 17px; letter-spacing: 1px; padding-left: 3%; padding-top: 4%; background: transparent; border: none; border-bottom: 3px solid purple; margin-top: 1%; border-left: 3px solid purple; "></textarea>
+
+            <br><br>
+
+            <input type="file" multiple style="width: 300px; height: 30px; font-size: 17px; letter-spacing: 1px; padding-left: 3%; background: transparent; border: none; border-bottom: 3px solid purple; margin-top: 3%; margin-left: =3%;" name="Images">
+
+            <br><br>
+
+            <input type="submit" value="Add" style="height: 40px; width: 150px; background-color: rgb(154, 6, 154); color: white; border: none; box-shadow: 5px 5px 8px 1px rgb(10, 10, 10); margin-top: 3%; font-size: 19px; border-radius: 8px; margin-left: 21%;">
+
+
+        </form>
+
+    </div>
+
+    <div id="table">
+
+        <table style="border: 1px solid white; margin: auto; padding: 2px;">
+
+            <thead>
+            <th style="border: 1px solid white; padding: 25px; color: white;">
+                SR
+            </th>
+
+            <th style="border: 1px solid white; padding: 20px; color: white;">
+                Title
+            </th>
+
+
+
+            <th style="border: 1px solid white; padding: 20px; color: white;">
+
+                Category
+            </th>
+
+
+            <th style="border: 1px solid white; padding: 20px; color: white; width: 200px; overflow: auto;">
+                Images
+            </th>
+
+
+            <th style="border: 1px solid white; padding: 20px; color: white;">
+                Content
+            </th>
+
+            </thead>
+
+
+
+            @{
+                if (ViewBag.data != null)
+                {
+                    foreach (var r in ViewBag.data.Rows)
+                    {
+                        <tr>
+                            <td style="border: 1px solid white; padding: 20px; color: white;">
+                                @r[0]
+                            </td>
+
+
+                            <td style="border: 1px solid white; padding: 20px; color: white;">
+                                @r[1]
+                            </td>
+
+
+                            <td style="border: 1px solid white; padding: 20px; color: white;">
+                                @r[2]
+                            </td>
+
+
+                            <td style="border: 1px solid white; padding: 20px; color: white;">
+                                @r[3]
+                            </td>
+
+
+                            <td style="border: 1px solid white; padding: 20px; color: white;">
+                                @r[4]
+                            </td>
+                        </tr>
+                    }
+                }
+            }
+
+        </table>
+    </div>
+
+</body>
+</html>
+

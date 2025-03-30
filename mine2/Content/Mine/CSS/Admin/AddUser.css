@@ -1,0 +1,33 @@
+body{
+    background: linear-gradient(to right, rgb(34, 29, 84), rgb(4, 113, 201));
+}
+
+#heading{
+    padding-top: 5%;
+    margin-left: -6%;
+}
+
+::placeholder{
+    color: black;
+    font-family: sans-serif;
+}
+
+form{
+    /* margin-bottom: -100%; */
+    margin-left: 40%;
+    height: 480px;
+    width: 400px;
+    background-color: rgba(252, 252, 252, 0.349);
+    margin-left: 5%;
+    padding-left: 3%;
+    margin-top: 7%;
+}
+
+a{
+    color: rgb(176, 4, 176);
+}
+
+#table{
+    margin-left: 30%;
+    margin-top: -32%;
+}

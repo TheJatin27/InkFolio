@@ -1,0 +1,81 @@
+﻿
+@{
+    ViewBag.Title = "BookReviews";
+
+    Layout = "~/Views/Shared/Blog_layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="/Content/Mine/CSS/General/blog.css">
+
+</head>
+<body>
+
+
+
+    @foreach (var b in ViewBag.comm.Rows)
+    {
+
+        <section id="sec_1" style="margin-left: 20%; margin-top: 8%;">
+
+
+            <h1 style="color: rgb(70, 70, 70); font-family:'Times New Roman', Times, serif; font-weight: lighter; margin-top: 2%; margin-left: 12%; margin-right: auto; font-size: 40px; letter-spacing: 1px;">@b[2]</h1>
+
+            <div id="side1">
+
+                <div id="poster1">
+                    <img src="~/Content/Blog_img/@b[4]" alt="" width="650px" id="ends_with_us">
+                </div>
+
+                <p id="review1">
+                    @b[3]
+                </p>
+
+                @*<button class="read_more"><a href="#" style="color: rgb(49, 54, 62); font-size: 15px;">Read More</a></button>*@
+            </div>
+
+
+        </section>
+
+        <form method="post" style="margin-top: -3%;">
+
+
+            <input type="text" value="@Session["user"]" name="useres" style="visibility:hidden; width: 1px; " />
+
+
+            <input type="text" value="@b[0 ]" name="blog_id" style="visibility:hidden; width: 1px; " />
+
+            <input type="text" placeholder="Write your comment here......." style="width: 340px; padding-left:3%; height: 50px; margin-left: 15%; margin-top: -10%; margin-bottom: 7%;" name="comment" />
+
+            <input type="submit" value="Comment" style="color: rgb(49, 54, 62); font-size: 15px; border: none; height: 40px; width: 100px; background-color: rgb(188, 187, 187); border-radius: 20px;" />
+
+
+            <div style="height: fit-content; width: 490px; margin-left: 15.3%; margin-top: -5%;">
+
+                <p></p>
+
+                <p style="border: 1px solid black; width: 400px; height: fit-content; ; padding-left: 5%; padding-top: 3%; padding-bottom: 3%; border-radius: 30px">
+                    @b[6]
+
+                    <br /><br />
+                    @b[7]
+                </p>
+
+            </div>
+
+            }
+        </form>
+
+
+    }
+
+
+
+</body>
+
+</html>
